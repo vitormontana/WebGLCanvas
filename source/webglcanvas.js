@@ -1,5 +1,5 @@
 // Joao Vitor Rodrigues, github: vitormontana
-// Biblioteca para carregamento fácil de shaders no canvas HTML
+// Biblioteca para carregamento de shaders OpenGL no canvas do HTML
 
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
@@ -96,6 +96,10 @@ function extend() {
 }
 
 "use strict";
+
+
+
+
 
 var xhr = createXHR;
 // Allow use of default import syntax in TypeScript
@@ -348,6 +352,9 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 };
 
 
+
+
+
 var asyncGenerator = function () {
   function AwaitValue(value) {
     this.value = value;
@@ -462,6 +469,9 @@ var asyncGenerator = function () {
 }();
 
 
+
+
+
 var classCallCheck = function (instance, Constructor) {
   if (!(instance instanceof Constructor)) {
     throw new TypeError("Cannot call a class as a function");
@@ -485,6 +495,46 @@ var createClass = function () {
     return Constructor;
   };
 }();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var toConsumableArray = function (arr) {
   if (Array.isArray(arr)) {
@@ -659,6 +709,8 @@ function createProgram(main, shaders, optAttribs, optLocations) {
     return program;
 }
 
+// By Brett Camber on
+// https://github.com/tangrams/tangram/blob/master/src/gl/glsl.js
 function parseUniforms(uniforms) {
     var prefix = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
 
@@ -788,6 +840,12 @@ function isSafari() {
     return (/^((?!chrome|android).)*safari/i.test(navigator.userAgent)
     );
 }
+
+
+
+
+
+
 
 function isDiff(a, b) {
     if (a && b) {
@@ -1251,7 +1309,6 @@ Texture.getMaxTextureSize = function (gl) {
 
 // Global set of textures, by name
 Texture.activeUnit = -1;
-
 
 var GlslCanvas = function () {
     function GlslCanvas(canvas, contextOptions, options) {
