@@ -10,7 +10,7 @@ Importe o código Javascript no seu projeto
 
 
 ```bash
-<script type="text/javascript" src="https://raw.githubusercontent.com/vitormontana/WebGLCanvas/refs/heads/main/source/webglcanvas.js"></script>
+<script type="text/javascript" src="https://vitormontana.github.io/WebGLCanvas/source/webglcanvas.js"></script>
 ```
 (Ou baixe o arquivo e coloque na pasta do seu projeto)
 Após adicione um elemento canvas com o link para o arquivo do shaders (pode ser externo ou local). Use os atributos de width e height para definir o tamanho da viewport
@@ -23,7 +23,7 @@ Após adicione um elemento canvas com o link para o arquivo do shaders (pode ser
 
 Exemplo com link para o shaders:
 ```
-<script type="text/javascript" src="https://raw.githubusercontent.com/vitormontana/WebGLCanvas/refs/heads/main/source/webglcanvas.js"></script>
+<script type="text/javascript" src="https://vitormontana.github.io/WebGLCanvas/source/webglcanvas.js"></script>
 
 <canvas class="glslCanvas" data-fragment-url="https://raw.githubusercontent.com/vitormontana/GLSL_Dance_of_Spheres/refs/heads/main/main.frag" width="500" height="500"></canvas>
 ```
