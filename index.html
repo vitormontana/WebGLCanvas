@@ -10,12 +10,31 @@
 >
 </head>
 <body>
+    <style>
+    body {
+        position: relative;
+    }
+
+    .center-div {
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 2px solid black;
+    }
+    </style>
     <h1>WebGL Canvas</h1>
     <p>Abaixo alguns exemplos:</p>
     <br>
-    <canvas class="glslCanvas" data-fragment-url="https://raw.githubusercontent.com/vitormontana/GLSL_Dance_of_Spheres/refs/heads/main/main.frag" width="1280" height="360" style="background-color: rgba(1, 1, 1, 0);"></canvas>
+
+    <canvas class="glslCanvas center" data-fragment-url="https://raw.githubusercontent.com/vitormontana/GLSL_Dance_of_Spheres/refs/heads/main/main.frag" width="1280" height="360" style="background-color: rgba(1, 1, 1, 0);"></canvas>
     <br>
     <canvas class="glslCanvas" data-fragment-url="https://raw.githubusercontent.com/vitormontana/codehost/refs/heads/main/example.frag" width="1280" height="360" style="background-color: rgba(1, 1, 1, 0);"></canvas>
+    <br>
+    <canvas class="glslCanvas" data-fragment-url="https://raw.githubusercontent.com/vitormontana/codehost/refs/heads/main/example2.frag" width="1280" height="360" style="background-color: rgba(1, 1, 1, 0);"></canvas>
     <script type="text/javascript" src="https://vitormontana.github.io/WebGLCanvas/source/webglcanvas.js"></script>
 </body>
 </html>
